@@ -12,14 +12,17 @@
 #include <stdio.h>
 
 int main() {
-	//Contador inicializado em 0
+	//Contador inicializado em 0.
 	int counter;
   	char c;
 	
 	counter = 0;
 	
+	//Pegamos o primeiro caractere.
+	scanf("%c", &c);
+	
 	//Percorremos a serie de caracteres um a um checando seus valores com a tabela ASCII.
-  	do{
+  	while (c != '\n'){
 		//Se encontramos uma letra, trata-se de uma palavra.
 		if ((c >= 65 && c <= 90) || (c >= 97 && c <= 122)){
 			counter = counter + 1;
@@ -44,10 +47,10 @@ int main() {
 			}
 		}
 		//Se nao se trata nem de um algorismo nem de uma letra, pegamos o proximo caractere da serie.
-		else{
+		else {
 			scanf("%c", &c);
 		}
-  	}while (c != '\n'); 
+  	} 
 
 	//Impressao do numero de palavras presentes na serie de caracteres.
   	printf("%d\n", counter);
