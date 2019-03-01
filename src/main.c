@@ -38,10 +38,8 @@ int main() {
 			//checamos se o numero eh um numero decimal separado por um ponto.
 			if (c = 46){
 				scanf("%c", &c);
-				if(c >= 48 && c <= 57){
-					while (c >= 48 && c <= 57){
-						scanf("%c", &c);
-					}
+				while (c >= 48 && c <= 57){
+					scanf("%c", &c);
 				}
 			}
 		}
