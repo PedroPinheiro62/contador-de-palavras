@@ -38,7 +38,7 @@ int main() {
 			while (c >= 48 && c <= 57){
 				scanf("%c", &c);
 			}
-			//checamos se o numero eh um numero decimal separado por um ponto.
+			//checamos se o numero eh um numero decimal separado por um ponto ou virgula.
 			if (c == 46 || c == 44){
 				scanf("%c", &c);
 				while (c >= 48 && c <= 57){
